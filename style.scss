@@ -436,6 +436,24 @@ footer {
   }
 }
 
+@media (min-width: 650px) and (max-width: 730px) {
+  .hero {
+    background-size: contain;
+    background-position: top 13px right -30vw;
+  }
+
+  .footer-upsell {
+    background-position: right -7vw bottom;
+  }
+
+  footer {
+    .left {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
 @media (min-width: 731px) {
   header {
     padding: 70px $padding-desktop;
@@ -634,6 +652,26 @@ footer {
 
       div {
         padding: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 731px) and (max-width: 1300px) {
+  .hero {
+    background-size: contain;
+    background-position: top 13px right -20vw;
+  }
+
+  .footer-upsell {
+    background-position: right 10vw bottom;
+  }
+
+  footer .bottom-menu {
+    .left {
+      padding-right: 0;
+      .footer-nav:not(:last-child) {
+        padding-right: 15px;
       }
     }
   }
