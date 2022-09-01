@@ -199,3 +199,24 @@ header {
     }
   }
 }
+
+.press {
+  padding: $padding-mobile;
+  padding-top: 65px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+
+  .desktop-only {
+    display: none;
+  }
+
+  .logo {
+    width: 150px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
