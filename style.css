@@ -193,4 +193,123 @@ header #toggle:checked ~ nav a:not(:last-child) {
   max-width: 100%;
   max-height: 100%;
 }
+
+.showcase {
+  padding: 0;
+  padding-left: 32px;
+}
+
+.showcase * {
+  margin: 0;
+}
+
+.showcase h1 {
+  color: #111111;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 16px 0;
+}
+
+.showcase .nfts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 40px 0;
+}
+
+.showcase .nfts .nft {
+  width: 290px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 40px;
+}
+
+.showcase .nfts .nft .nft-info {
+  background-color: #eeeeee;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase .nfts .nft .nft-info * {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #777777;
+}
+
+.showcase .nfts .nft .nft-info * > * {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.showcase .nfts .nft .nft-info h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.showcase .nfts .nft .nft-info h3 {
+  color: #111111;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.showcase .nfts .nft .nft-info p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.showcase .nfts .nft .nft-info .left {
+  padding-left: 24px;
+}
+
+.showcase .nfts .nft .nft-info .left h2 {
+  color: #ff8139;
+}
+
+.showcase .nfts .nft .nft-info .right {
+  text-align: right;
+  padding-right: 24px;
+}
+
+.showcase .nfts .nft .nft-info .right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase .nfts .nft .nft-info .right div * {
+  padding: 0;
+}
+
+.showcase .nfts .nft .nft-info .right div img {
+  width: 13px;
+  height: 22px;
+}
+
+.showcase .nfts .nft .nft-info .right div h3 {
+  padding-left: 8px;
+}
+
+.showcase .nfts .nft:last-child {
+  padding-right: 32px;
+}
 /*# sourceMappingURL=style.css.map */
