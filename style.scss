@@ -14,8 +14,39 @@ $color-red: #ff3939;
 $color-light-green: #edfff6;
 $color-light-orange: #fff0e8;
 
+$linear-gradient-button: linear-gradient(
+  60deg,
+  rgba(255, 131, 145, 1) 0%,
+  rgba(253, 106, 95, 1) 22%,
+  rgba(243, 123, 83, 1) 75%,
+  rgba(212, 207, 165, 1) 100%
+);
+
 $image-height: 36px;
 $padding-mobile: 32px;
+
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: $color-dark2;
+}
+
+a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: none;
+  color: $color-dark2;
+}
 
 .site-container {
   min-width: 428px;
@@ -87,6 +118,55 @@ header {
 
     a:not(:last-child) {
       border-bottom: 1px solid $color-light1;
+    }
+  }
+}
+
+.hero {
+  padding: 80px $padding-mobile;
+  padding-top: 48px;
+
+  background-image: url("assets/graphic.svg");
+  background-position: top -35px right -46vw;
+  background-size: 95%;
+  background-repeat: no-repeat;
+
+  .text {
+    width: 75%;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      color: $color-pink;
+    }
+
+    h1 {
+      color: $color-dark1;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 58px;
+      margin: 24px 0;
+    }
+
+    button {
+      color: $color-dark1;
+      line-height: 150%;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 32px;
+      cursor: pointer;
+
+      width: 188px;
+      height: 75px;
+      border-radius: 100px;
+      border: 4px solid transparent;
+
+      background: linear-gradient($color-light1, $color-light1) content-box,
+        $linear-gradient-button border-box;
     }
   }
 }
