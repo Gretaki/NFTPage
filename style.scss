@@ -22,6 +22,14 @@ $linear-gradient-button: linear-gradient(
   rgba(212, 207, 165, 1) 100%
 );
 
+$linear-gradient-upsell: linear-gradient(
+  74deg,
+  #ff8391 0%,
+  #fd6a5f 22%,
+  #f37b53 64%,
+  #d4cfa5 100%
+);
+
 $image-height: 36px;
 $padding-mobile: 32px;
 
@@ -167,6 +175,27 @@ header {
 
       background: linear-gradient($color-light1, $color-light1) content-box,
         $linear-gradient-button border-box;
+    }
+  }
+}
+
+.upsell {
+  .wrapper {
+    background-image: $linear-gradient-upsell;
+
+    padding: $padding-mobile;
+    padding-top: 106px;
+
+    * {
+      margin: 0;
+      color: $color-dark1;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+      padding: 16px 0;
     }
   }
 }
