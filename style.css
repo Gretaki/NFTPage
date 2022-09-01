@@ -1,1 +1,635 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://rsms.me/inter/inter.css");
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+}
+
+a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #555555;
+}
+
+.site-container {
+  min-width: 428px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px;
+}
+
+header img {
+  height: 36px;
+}
+
+header #toggle {
+  display: none;
+  height: 22px;
+  width: 24px;
+}
+
+header .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 24px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+}
+
+header .hamburger div {
+  width: 24px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #999999;
+}
+
+header .hamburger div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+header nav {
+  display: none;
+}
+
+header #toggle:checked ~ nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 100px;
+  right: 32px;
+  border-radius: 10px;
+  background-color: #ff3998;
+}
+
+header #toggle:checked ~ nav a {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+header #toggle:checked ~ nav a:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+
+.hero {
+  padding: 80px 32px;
+  padding-top: 48px;
+  background-image: url("assets/graphic.svg");
+  background-position: top -35px right -46vw;
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.hero .text {
+  width: 75%;
+}
+
+.hero .text * {
+  margin: 0;
+  padding: 0;
+}
+
+.hero .text h2 {
+  color: #ff3998;
+}
+
+.hero .text h1 {
+  color: #111111;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  margin: 24px 0;
+}
+
+.hero .text button {
+  color: #111111;
+  line-height: 150%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 32px;
+  cursor: pointer;
+  width: 188px;
+  height: 75px;
+  border-radius: 100px;
+  border: 4px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) content-box, linear-gradient(60deg, #ff8391 0%, #fd6a5f 22%, #f37b53 75%, #d4cfa5 100%) border-box;
+}
+
+.upsell .wrapper {
+  background-image: linear-gradient(74deg, #ff8391 0%, #fd6a5f 22%, #f37b53 64%, #d4cfa5 100%);
+  padding: 32px;
+  padding-top: 106px;
+}
+
+.upsell .wrapper * {
+  margin: 0;
+  color: #111111;
+}
+
+.upsell .wrapper h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 16px 0;
+}
+
+.press {
+  padding: 32px;
+  padding-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+
+.press .desktop-only {
+  display: none;
+}
+
+.press .logo {
+  width: 150px;
+}
+
+.press .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.showcase {
+  padding: 0;
+  padding-left: 32px;
+}
+
+.showcase * {
+  margin: 0;
+}
+
+.showcase h1 {
+  color: #111111;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 16px 0;
+}
+
+.showcase .nfts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 40px 0;
+}
+
+.showcase .nfts .nft {
+  width: 290px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 40px;
+}
+
+.showcase .nfts .nft .nft-info {
+  background-color: #eeeeee;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase .nfts .nft .nft-info * {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #777777;
+}
+
+.showcase .nfts .nft .nft-info * > * {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.showcase .nfts .nft .nft-info h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.showcase .nfts .nft .nft-info h3 {
+  color: #111111;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.showcase .nfts .nft .nft-info p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.showcase .nfts .nft .nft-info .left {
+  padding-left: 24px;
+}
+
+.showcase .nfts .nft .nft-info .left h2 {
+  color: #ff8139;
+}
+
+.showcase .nfts .nft .nft-info .right {
+  text-align: right;
+  padding-right: 24px;
+}
+
+.showcase .nfts .nft .nft-info .right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase .nfts .nft .nft-info .right div * {
+  padding: 0;
+}
+
+.showcase .nfts .nft .nft-info .right div img {
+  width: 13px;
+  height: 22px;
+}
+
+.showcase .nfts .nft .nft-info .right div h3 {
+  padding-left: 8px;
+}
+
+.showcase .nfts .nft:last-child {
+  padding-right: 32px;
+}
+
+.divider {
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.divider.large-spacing {
+  margin: 52px 0;
+}
+
+.divider.transparent {
+  background-color: #111111;
+  opacity: 0.08;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  margin-top: -5px;
+}
+
+.footer-upsell {
+  padding-top: 12px;
+  padding-bottom: 66px;
+  background-image: url("assets/upsell-footer-image.svg");
+  background-position: right -7vw bottom;
+  background-size: 206px;
+}
+
+.footer-upsell .text {
+  width: 57%;
+}
+
+.footer-upsell .text h1 {
+  line-height: 68px;
+}
+
+footer {
+  padding: 32px;
+  padding-bottom: 73px;
+}
+
+footer * {
+  margin: 0;
+}
+
+footer .right {
+  padding-top: 2px;
+}
+
+footer .right img {
+  height: 36px;
+  padding: 30px 0;
+}
+
+footer .right p {
+  line-height: 100%;
+}
+
+footer .right .social a {
+  font-size: 18px;
+  color: #999999;
+  margin: 32px 8px;
+}
+
+footer .right .social a:first-child {
+  margin-left: 0;
+}
+
+footer .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  row-gap: 40px;
+  padding: 32px 0;
+}
+
+footer .left .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .left .footer-nav * {
+  color: #555555;
+}
+
+footer .left .footer-nav h2 {
+  padding-bottom: 28px;
+}
+
+footer .left .footer-nav a:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+footer #copyright .desktop-only {
+  display: none;
+}
+
+footer #copyright div {
+  color: #999999;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  padding: 32px 0;
+}
+
+@media (min-width: 650px) and (max-width: 730px) {
+  .hero {
+    background-size: contain;
+    background-position: top 13px right -30vw;
+  }
+  .footer-upsell {
+    background-position: right -7vw bottom;
+  }
+  footer .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 731px) {
+  header {
+    padding: 70px 80px;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav a {
+    padding: 0 14px;
+  }
+  header nav a:first-child:last-child {
+    padding-left: 0;
+  }
+  header nav a:last-child {
+    color: #ff3998;
+  }
+  .hero {
+    padding: 130px 80px;
+    background-position: top 30px right 2vw;
+    background-size: contain;
+  }
+  .hero .text {
+    width: 44%;
+  }
+  .hero .text h1 {
+    font-size: 96px;
+    line-height: 116px;
+    margin-bottom: 32px;
+  }
+  .hero .text button {
+    margin-top: 41px;
+  }
+  .upsell {
+    padding: 0 80px;
+    margin-bottom: 80px;
+    margin-top: 70px;
+  }
+  .upsell .wrapper {
+    background-image: url(assets/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 64px;
+    border-radius: 16px;
+  }
+  .upsell .wrapper h1 {
+    padding: 0 32px;
+    padding-bottom: 24px;
+    padding-top: 154px;
+  }
+  .upsell .wrapper p {
+    padding: 0 32px;
+  }
+  .press {
+    padding: 40px 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .press .desktop-only {
+    display: block;
+  }
+  .press .logo {
+    width: auto;
+    height: 49px;
+  }
+  .press .logo img {
+    height: 49px;
+  }
+  .press .logo .mobile-only {
+    display: none;
+  }
+  .showcase {
+    padding: 80px;
+    padding-bottom: 0;
+  }
+  .showcase h1 {
+    padding: 0;
+    padding-bottom: 24px;
+  }
+  .showcase .nfts {
+    padding: 56px 0;
+  }
+  .showcase .nfts .nft:last-child {
+    padding-right: 0;
+  }
+  .divider {
+    margin: 0 80px;
+  }
+  .divider.large-spacing {
+    margin: 64px 80px;
+  }
+  .divider.transparent {
+    display: none;
+  }
+  .footer-upsell {
+    padding-top: 56px;
+    padding-bottom: 120px;
+    background-position: right 21vw bottom;
+  }
+  .footer-upsell .text {
+    width: 49%;
+  }
+  .footer-upsell .text h1 {
+    font-size: 56px;
+    margin-bottom: 24px;
+    line-height: 68px;
+  }
+  .footer-upsell .text button {
+    margin-top: 40px;
+  }
+  footer {
+    padding: 0 80px;
+    padding-bottom: 71px;
+  }
+  footer .bottom-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 120px 0;
+  }
+  footer .bottom-menu .right {
+    padding-top: 0;
+  }
+  footer .bottom-menu .right img {
+    padding-top: 0;
+  }
+  footer .bottom-menu .right p {
+    line-height: 1;
+  }
+  footer .bottom-menu .right div {
+    line-height: 1;
+  }
+  footer .bottom-menu .right div a {
+    margin-bottom: 0;
+  }
+  footer .bottom-menu .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    padding-right: 30px;
+  }
+  footer .bottom-menu .left .footer-nav:not(:last-child) {
+    padding-right: 75px;
+  }
+  footer #copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer #copyright .desktop-only {
+    display: block;
+  }
+  footer #copyright div {
+    padding: 0;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 1300px) {
+  .hero {
+    background-size: contain;
+    background-position: top 13px right -20vw;
+  }
+  .footer-upsell {
+    background-position: right 10vw bottom;
+  }
+  footer .bottom-menu .left {
+    padding-right: 0;
+  }
+  footer .bottom-menu .left .footer-nav:not(:last-child) {
+    padding-right: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
