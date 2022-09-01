@@ -312,4 +312,113 @@ header #toggle:checked ~ nav a:not(:last-child) {
 .showcase .nfts .nft:last-child {
   padding-right: 32px;
 }
+
+.divider {
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.divider.large-spacing {
+  margin: 52px 0;
+}
+
+.divider.transparent {
+  background-color: #111111;
+  opacity: 0.08;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  margin-top: -5px;
+}
+
+.footer-upsell {
+  padding-top: 12px;
+  padding-bottom: 66px;
+  background-image: url("assets/upsell-footer-image.svg");
+  background-position: right -7vw bottom;
+  background-size: 206px;
+}
+
+.footer-upsell .text {
+  width: 57%;
+}
+
+.footer-upsell .text h1 {
+  line-height: 68px;
+}
+
+footer {
+  padding: 32px;
+  padding-bottom: 73px;
+}
+
+footer * {
+  margin: 0;
+}
+
+footer .right {
+  padding-top: 2px;
+}
+
+footer .right img {
+  height: 36px;
+  padding: 30px 0;
+}
+
+footer .right p {
+  line-height: 100%;
+}
+
+footer .right .social a {
+  font-size: 18px;
+  color: #999999;
+  margin: 32px 8px;
+}
+
+footer .right .social a:first-child {
+  margin-left: 0;
+}
+
+footer .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  row-gap: 40px;
+  padding: 32px 0;
+}
+
+footer .left .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .left .footer-nav * {
+  color: #555555;
+}
+
+footer .left .footer-nav h2 {
+  padding-bottom: 28px;
+}
+
+footer .left .footer-nav a:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+footer #copyright .desktop-only {
+  display: none;
+}
+
+footer #copyright div {
+  color: #999999;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  padding: 32px 0;
+}
 /*# sourceMappingURL=style.css.map */
