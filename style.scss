@@ -1,0 +1,92 @@
+@import url("https://rsms.me/inter/inter.css");
+
+$color-dark1: #111111;
+$color-dark2: #555555;
+$color-dark3: #777777;
+$color-dark4: #999999;
+$color-light1: #ffffff;
+$color-light2: #eeeeee;
+$color-light3: #cccccc;
+$color-orange: #ff8139;
+$color-pink: #ff3998;
+$color-green: #39ffa0;
+$color-red: #ff3939;
+$color-light-green: #edfff6;
+$color-light-orange: #fff0e8;
+
+$image-height: 36px;
+$padding-mobile: 32px;
+
+.site-container {
+  min-width: 428px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 0;
+  background-color: $color-light1;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  $burger-width: 24px;
+  $burger-height: 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-mobile;
+
+  img {
+    height: $image-height;
+  }
+
+  #toggle {
+    display: none;
+    height: $burger-height;
+    width: $burger-width;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    width: $burger-width;
+    height: $burger-height;
+    cursor: pointer;
+    position: relative;
+
+    div {
+      width: $burger-width;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $color-dark4;
+    }
+
+    div:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  #toggle:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: $padding-mobile;
+    border-radius: 10px;
+    background-color: $color-pink;
+
+    a {
+      color: $color-light1;
+      text-transform: uppercase;
+      padding: 16px;
+    }
+
+    a:not(:last-child) {
+      border-bottom: 1px solid $color-light1;
+    }
+  }
+}
