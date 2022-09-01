@@ -30,8 +30,10 @@ $linear-gradient-upsell: linear-gradient(
   #d4cfa5 100%
 );
 
-$image-height: 36px;
 $padding-mobile: 32px;
+$padding-desktop: 80px;
+
+$image-height: 36px;
 
 h2 {
   font-weight: 700;
@@ -430,6 +432,209 @@ footer {
       font-size: 20px;
       line-height: 100%;
       padding: $padding-mobile 0;
+    }
+  }
+}
+
+@media (min-width: 731px) {
+  header {
+    padding: 70px $padding-desktop;
+
+    .hamburger {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+
+      a {
+        padding: 0 14px;
+      }
+
+      a:first-child:last-child {
+        padding-left: 0;
+      }
+
+      a:last-child {
+        color: $color-pink;
+      }
+    }
+  }
+
+  .hero {
+    padding: 130px $padding-desktop;
+
+    background-position: top 30px right 2vw;
+    background-size: contain;
+
+    .text {
+      width: 44%;
+
+      h1 {
+        font-size: 96px;
+        line-height: 116px;
+        margin-bottom: 32px;
+      }
+
+      button {
+        margin-top: 41px;
+      }
+    }
+  }
+
+  .upsell {
+    padding: 0 $padding-desktop;
+    margin-bottom: $padding-desktop;
+    margin-top: 70px;
+
+    .wrapper {
+      background-image: url(assets/background.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+
+      padding: 0;
+      padding-top: 0;
+      padding-bottom: 64px;
+      border-radius: 16px;
+
+      h1 {
+        padding: 0 32px;
+        padding-bottom: 24px;
+        padding-top: 154px;
+      }
+
+      p {
+        padding: 0 32px;
+      }
+    }
+  }
+
+  .press {
+    padding: 40px $padding-desktop;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .desktop-only {
+      display: block;
+    }
+
+    .logo {
+      width: auto;
+      height: 49px;
+
+      img {
+        height: 49px;
+      }
+
+      .mobile-only {
+        display: none;
+      }
+    }
+  }
+
+  .showcase {
+    padding: $padding-desktop;
+    padding-bottom: 0;
+
+    h1 {
+      padding: 0;
+      padding-bottom: 24px;
+    }
+
+    .nfts {
+      padding: 56px 0;
+
+      .nft:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .divider {
+    margin: 0 $padding-desktop;
+
+    &.large-spacing {
+      margin: 64px $padding-desktop;
+    }
+
+    &.transparent {
+      display: none;
+    }
+  }
+
+  .footer-upsell {
+    padding-top: 56px;
+    padding-bottom: 120px;
+
+    background-position: right 21vw bottom;
+
+    .text {
+      width: 49%;
+
+      h1 {
+        font-size: 56px;
+        margin-bottom: 24px;
+        line-height: 68px;
+      }
+
+      button {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  footer {
+    padding: 0 $padding-desktop;
+    padding-bottom: 71px;
+
+    .bottom-menu {
+      display: flex;
+      justify-content: space-between;
+      margin: 120px 0;
+
+      .right {
+        padding-top: 0;
+
+        img {
+          padding-top: 0;
+        }
+
+        p {
+          line-height: 1;
+        }
+
+        div {
+          line-height: 1;
+
+          a {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .left {
+        display: flex;
+        padding: 0;
+        padding-right: 30px;
+
+        .footer-nav:not(:last-child) {
+          padding-right: 75px;
+        }
+      }
+    }
+
+    #copyright {
+      display: flex;
+      justify-content: space-between;
+
+      .desktop-only {
+        display: block;
+      }
+
+      div {
+        padding: 0;
+      }
     }
   }
 }
